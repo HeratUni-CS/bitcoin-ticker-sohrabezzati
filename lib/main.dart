@@ -7,11 +7,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
           appBarTheme: const AppBarTheme(backgroundColor: Colors.lightBlue),
           primaryColor: Colors.lightBlue,
           scaffoldBackgroundColor: Colors.white),
-      home: PriceScreen(),
+      home: const PriceScreen(),
     );
   }
 }
